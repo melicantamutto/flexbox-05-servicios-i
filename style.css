@@ -50,3 +50,22 @@ article{
     flex: 1 1 40%;
     padding: 10px;
 }
+
+@media (min-width: 320px) and (max-width: 550px) and (orientation:portrait){
+    body{
+        padding: 100px;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    h2, img, p{
+        margin-left:0;
+        margin-right:0;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
